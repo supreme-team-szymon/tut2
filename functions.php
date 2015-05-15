@@ -18,12 +18,7 @@ function getProps($order){
 	         
 			 
 			 
-			 
-			 
-			 <li>Availible to: ".$row['a_to']."</li>
-	         <li>Type of rented space: ".$row['tors']."</li>
-	         <li>Additional services: ".$row['services']."</li>
-	         </ul>
+	
 			 
 	            
 	            
@@ -39,5 +34,7 @@ function getProps($order){
 	}
 	
 }
-
+function LessIsMore(){
+	echo 'less is really more as long as it"s not less tnak actually more';
+}
 ?>
