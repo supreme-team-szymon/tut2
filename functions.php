@@ -5,7 +5,7 @@ function getProps($order){
 
 		try {
 
-		    foreach($db->query("SELECT * FROM wp_space_for_rent ORDER BY price $order") as $row) {
+		    foreach($db->query("SELECT * FROM rent ORDER BY price $order") as $row) {
 		   echo "
 		    <div class='property'>
 			 <h3>".$row['city']." ".$row['zip_code']." ".$row['street']." ".$row['number']."</h3>
