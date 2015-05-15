@@ -5,7 +5,11 @@ function getProps($order){
 
 		try {
 
-		    foreach($db->query("SELECT * FROM wp_space_for_rent ORDER BY order") as $row) {
+
+		
+
+		    foreach($db->query("SELECT * FROM rent ORDER BY price $order") as $row) {
+
 		   echo "
 		    <div class='property'>
 			 <h3>".$row['city']." ".$row['zip_code']." ".$row['street']." ".$row['number']."</h3>
@@ -18,12 +22,7 @@ function getProps($order){
 	         
 			 
 			 
-			 
-			 
-			 <li>Availible to: ".$row['a_to']."</li>
-	         <li>Type of rented space: ".$row['tors']."</li>
-	         <li>Additional services: ".$row['services']."</li>
-	         </ul>
+	
 			 
 	            
 	            
@@ -39,5 +38,7 @@ function getProps($order){
 	}
 	
 }
-
+function LessIsMore(){
+	echo 'less is really more as long as it"s not less tnak actually more';
+}
 ?>
